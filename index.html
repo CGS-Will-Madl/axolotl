@@ -1,16 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<!--
-// This project is submitted as part of the assessment for Year 9 IST.
-// This is all our own work. We have referenced any work used from other
-// sources and have not plagiarised the work of others.
-// (signed) Toby Wilson & Will Madl
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>
-      Axolotl Voting
+      Axolotl Server
     </title>
     <link rel="stylesheet" type="text/css" href=
     "http://www.htmlkit.com/i/default_html.css" />
@@ -18,38 +11,6 @@
     "text/html; charset=utf-8" />
     <link type="text/css" rel="stylesheet" href="style.css" media=
     "screen" />
-    <script type="text/javascript" language="javascript">
-const
-scrollTo = function(to, duration) {
-    const
-    element = document.scrollingElement || document.documentElement,
-    start = element.scrollTop,
-    change = to - start,
-    startDate = +new Date(),
-    // t = current time
-    // b = start value
-    // c = change in value
-    // d = duration
-    easeInOutQuad = function(t, b, c, d) {
-        t /= d/2;
-        if (t = 1) return c/2*t*t + b;
-        t--;
-        return -c/2 * (t*(t-2) - 1) + b;
-    },
-    animateScroll = function() {
-        const currentDate = +new Date();
-        const currentTime = currentDate - startDate;
-        element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
-        if(currentTime = duration) {
-            requestAnimationFrame(animateScroll);
-        }
-        else {
-            element.scrollTop = to;
-        }
-    };
-    animateScroll();
-};
-</script>
     <meta name="viewport" content=
     "width=device-width, initial-scale=1" />
     <link type="text/css" rel="stylesheet" href="test.css" media=
@@ -57,7 +18,7 @@ scrollTo = function(to, duration) {
     <link type="javascript" rel="stylesheet" href="test.css" media=
     "screen" />
     <link href=
-    "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
+    "axolotl-icon.png"
     rel="shortcut icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" type="text/css" />
     <script type="text/javascript" language="javascript" src=
@@ -85,12 +46,13 @@ function checkTime(i) {
 		<div id="txt"></div>
 		<a href="#">More Coming Soon</a>
     </div>
-    
+
     <div align="center">
       <h1 align="center" class="text-center">
-        Axolotl Voting
+        Axolotl Server
       </h1>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4b7cnh8_1If1E7DMpVvTTwa24TtEW4Pvn6dYziz3kPbYXSQ/viewform?embedded=true" width="640" height="653" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
     </div>
   </body>
 </html>
