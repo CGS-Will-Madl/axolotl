@@ -21,17 +21,17 @@
     "axolotl-icon.png"
     rel="shortcut icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" type="text/css" />
-    <script type="text/javascript" language="javascript" src=
-    "test1.js">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</script>
+      <script type="text/javascript" language="javascript" src=
+      "test1.js">
+      </script>
 <script>
 function startTime() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
     m = checkTime(m);
-    document.getElementById('txt').innerHTML =
+    document.getElementById('time').innerHTML =
     h + ":" + m ;
     var t = setTimeout(startTime, 500);
 }
@@ -44,7 +44,7 @@ function checkTime(i) {
   <body background="bg2.jpg">
     <div class="navbar">
     	<a href="index.html">Homepage</a>
-		<div id="txt"></div>
+		<div id="time"></div>
 		<a href="#">More Coming Soon</a>
     </div>
 
